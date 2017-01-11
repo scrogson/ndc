@@ -1,1 +1,19 @@
 /* This file is for your main application css. */
+.navbar a.navbar-brand {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar a.navbar-brand * {
+  pointer-events: none;
+  line-height: 24px;
+}
+
+.navbar a.navbar-brand p {
+  font-size: 24px;
+  font-weight: normal;
+}
+.navbar a.navbar-brand p span {
+  font-family: 'CalibreMedium',Arial,sans-serif;
+  font-weight: bold;
+}
