@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "babel-brunch": "~6.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
     "brunch": "2.7.4",
     "clean-css-brunch": "~2.0.0",
     "css-brunch": "~2.0.0",
