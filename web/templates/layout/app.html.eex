@@ -15,7 +15,7 @@
     <div class="container">
       <header class="navbar navbar-static-top">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
+          <li><%= link "Rooms", to: room_path(@conn, :index) %></li>
         </ul>
         <a href="/" class="navbar-brand">
           <p><span>NDC</span> { London }</p>

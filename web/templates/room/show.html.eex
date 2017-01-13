@@ -1,0 +1,9 @@
+<h1>
+  <%= String.capitalize(@room.name) %>
+  <small class="lead"><%= @room.description %></small>
+</h1>
+
+<div id="chat" data-room="<%= @room.name %>" data-token="<%= @current_user_token %>"></div>
+<script>
+  window.userToken = "<%= @current_user_token %>";
+</script>
