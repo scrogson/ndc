@@ -33,10 +33,6 @@ defmodule NDC.Room do
     Repo.get_by(Room, name: name)
   end
 
-  def get_room(name) do
-    Repo.get_by(Room, name: name)
-  end
-
   def with_messages(%Room{} = room) do
     Repo.preload(room, [messages: :user])
   end

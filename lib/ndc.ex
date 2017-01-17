@@ -12,6 +12,7 @@ defmodule NDC do
       supervisor(NDC.Repo, []),
       # Start the endpoint when the application starts
       supervisor(NDC.Endpoint, []),
+      supervisor(NDC.Presence, [])
       # Start your own worker by calling: NDC.Worker.start_link(arg1, arg2, arg3)
       # worker(NDC.Worker, [arg1, arg2, arg3]),
     ]
