@@ -18,8 +18,18 @@ defmodule NDC.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {NDC, []},
-     applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+     applications: [
+       :phoenix,
+       :phoenix_pubsub,
+       :phoenix_html,
+       :cowboy,
+       :logger,
+       :gettext,
+       :phoenix_ecto,
+       :postgrex,
+       :exgravatar,
+       :comeonin
+    ]]
   end
 
   # Specifies which paths to compile per environment.
@@ -39,6 +49,7 @@ defmodule NDC.Mixfile do
      {:gettext, "~> 0.11"},
      {:comeonin, "~> 3.0"},
      {:exgravatar, "~> 2.0"},
+     {:distillery, "~> 1.0"},
      {:cowboy, "~> 1.0"}]
   end
 
