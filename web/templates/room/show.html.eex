@@ -4,3 +4,6 @@
 </h1>
 
 <div id="chat" data-room="<%= @room.name %>"></div>
+<script>
+  window.userToken = "<%= @current_user_token %>";
+</script>
