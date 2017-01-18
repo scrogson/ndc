@@ -3,7 +3,8 @@ defmodule NDC.RoomChannel do
   alias NDC.{Message, Presence, Room}
 
   def join("rooms:" <> name, _payload, socket) do
-    {:ok, socket}
+    room = Room.get_room(name)
+    {:ok, assign(socket, :room, room)}
   end
 
   def handle_in("new_msg", %{"body" => body}, socket) do
